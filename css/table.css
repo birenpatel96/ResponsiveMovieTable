@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+main,
+nav,{
+  display: inline-block; 
+}
+
+body {
+    background-image: url(../images/1.jpg);
+}
+
+.head{
+    color: white;
+}
+
+.title{
+    color: white;
+    text-align:center;
+    font-size: 32px;
+    text-shadow: 0px 0.5px #ee66ee;
+    text-decoration: underline;
+}
+main p{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    white-space: inherit;
+    margin: auto;
+    font-style: italic;
+}
+
+marquee{
+    color: white;
+    font-size: 30px;    
+}
+
+section p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    }
+
+hr {
+    border-bottom-style: solid;
+    background-color: gray;
+    margin-top: auto;
+}
+
+table{
+    background-color:darkgrey;
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    padding: 6px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+tr:nth-of-type(odd){
+    background: #eee;
+}
+
+nav{
+    overflow: hidden;
+}
+
+ ul {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    background-color: black;
+    font-size: 1.8em;
+    box-shadow: 0px 0px 35px 0px rgba(255, 255, 255, 0.3);
+}
+
+li {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+li a:hover {
+    background-color: lightcoral;
+    color: black;
+    font-weight: bolder;
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 0px 0.5px #ee66ee;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+    color: white;  
+}
+
+/* Responsive Table */
+@media only screen and (max-width: 760px),
+    (min-device-width:768px) and (max-device-width:1024px){
+        
+        table, thead, tbody, th, td, tr{
+            display: block;
+        }
+            
+        thead tr{
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        tr{
+            border: 1px solid #ccc;
+        }
+        td{
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+        td:before{
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+      
+        td:nth-of-type(1):before{content: "Index";}
+        td:nth-of-type(2):before{content: "Movie Name";} 
+        td:nth-of-type(3):before{content: "Language";}
+        td:nth-of-type(4):before{content: "Date";}
+        td:nth-of-type(5):before{content: "Lenght";}
+        td:nth-of-type(6):before{content: "Movie Name";}   
+        td:nth-of-type(7):before{content: "Genre";}
+        td:nth-of-type(8):before{content: "Director";}
+}       
+
+/* Responsive Display */
+
+@media only screen and (max-width: 1024px) {
+    
+ .head{
+    color: white;
+     font-size: 24px;
+}
+
+.title{
+    color: white;
+    text-align:center;
+    font-size: 26px;
+    text-shadow: 0px 0.5px #ee66ee;
+    text-decoration: underline;
+}
+main p{
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    white-space: inherit;
+    margin: auto;
+    font-style: italic;
+}
+
+marquee{
+    color: white;
+    font-size: 25px;    
+}
+
+section p{
+   color: white;
+    font-size: 21px;
+    text-align: center;
+    font-style: italic;
+    }
+
+hr {
+    border-bottom-style: solid;
+    background-color: gray;
+    margin-top: auto;
+}
+
+
+nav{
+    overflow: hidden;
+}
+
+ ul {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    background-color: black;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 35px 0px rgba(255, 255, 255, 0.3);
+}
+
+li {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+li a:hover {
+    background-color: lightcoral;
+    color: black;
+    font-weight: bolder;
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0px 0.5px #ee66ee;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+    color: white;  
+    font-size: 13px;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+ .head{
+    color: white;
+     font-size: 20px;
+}
+
+.title{
+    margin-top: auto;
+    color: white;
+    text-align:center;
+    font-size: 23px;
+    text-shadow: 0px 0.5px #ee66ee;
+    text-decoration: underline;
+}
+main p{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    white-space: inherit;
+    margin: auto;
+    font-style: italic;
+}
+
+marquee{
+    color: white;
+    font-size: 18px;    
+}
+
+section p{
+    margin-top: auto;
+   color: white;
+    font-size: 17px;
+    text-align: center;
+    font-style: italic;
+    }
+
+hr {
+    border-bottom-style: solid;
+    background-color: gray;
+    margin-top: auto;
+}
+
+
+nav{
+    overflow: hidden;
+}
+
+ ul {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    background-color: black;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 35px 0px rgba(255, 255, 255, 0.3);
+}
+
+li {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin:auto;
+}
+
+li a:hover {
+    background-color: lightcoral;
+    color: black;
+    font-weight: bolder;
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 0px 0.5px #ee66ee;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+    color: white;  
+    font-size: 11px;
+}
+}
